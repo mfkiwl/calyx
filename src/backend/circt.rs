@@ -161,6 +161,7 @@ impl CirctBackend {
             ir::CellType::Primitive {
                 name,
                 param_binding,
+                ..
             } => {
                 let bind: HashMap<&str, u64> = param_binding
                     .iter()
